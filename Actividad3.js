@@ -7,6 +7,18 @@
 // 7.456.345 se convierte en 7M.
 // si el numero es menor a 1000 se debe devolver el mismo numero como un string.
 
-let numero = parseInt(prompt("Ingrese un numero"));
+let numero = parseInt(prompt("¿cuantos likes tiene?"));
 
-function likes(numero) {}
+const likes = numero => {
+  if (numero < 1000) {
+    console.log(`${numero}`)
+  }
+  else if (numero < 1000000) {
+    console.log(`${Math.round(numero / 1000).toFixed(0)}K`)
+  }
+  else {
+    console.log(`${Math.round(numero / 1000000).toFixed(0)}M`)
+  }
+}
+
+likes(numero);

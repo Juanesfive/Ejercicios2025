@@ -6,10 +6,28 @@
 //  Nota: puedes asumir que la posicion inicial va a ser menor o igual
 //  a la posición final, y que estan dentro de los limites del arreglo
 
-let a = parseInt(prompt("ingrese el valor inicial"));
-let b = parseInt(prompt("Ingrese el valor final "));
-const c = [2, 4, 556, 667, 44, 66, 32];
+let a = parseInt(prompt(" ingresa el numero inicial"));
+let b = parseInt(prompt(" ingresa el numero final"));
+let c = [1, 2, 5, 48, 7, 1, 24, 8, 9, 1, 2, 5];
 
-function sumarArreglo(arreglo) {
-  let;
+const sumarArreglo = (a, b, c) => {
+  let suma = 0;
+  if (a < c.length && b > a && a > 0) {
+
+    for (let i = a; i <= b; ++i) {
+
+      suma = suma += c[i]
+
+    }
+    return suma;
+
+  } else {
+
+    throw new Error("los rangos superan el limite del arreglo");
+
+  }
+
 }
+
+let resultado = sumarArreglo(a, b, c);
+console.log(resultado);
