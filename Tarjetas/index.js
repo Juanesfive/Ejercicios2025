@@ -1,4 +1,4 @@
-// index.js
+
 import { validarNumeroTarjeta } from "./validacion.js";
 import { identificarTipoTarjeta } from "./tarjeta.js";
 
